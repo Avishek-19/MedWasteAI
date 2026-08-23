@@ -697,22 +697,24 @@ A formal open-source license may be added in a future release.
 
 ---
 
-👥 Team
+## 👥 Team
 
-Avishek Paul
-Student ID: 220219
-Email: avishek220219@cseku.ac.bd
+### Avishek Paul
 
-Md Nayeem Hossain
-Student ID: 220208
-Email: nayemhossain17678@gmail.com
+**Student ID:** 220219
+**Email:** [avishek220219@cseku.ac.bd](mailto:avishek220219@cseku.ac.bd)
 
-Discipline: Computer Science and Engineering
-University: Khulna University
+### Md Nayeem Hossain
 
-Supervisor: Prof. Dr. Kazi Mashudul Alam
+**Student ID:** 220208
+**Email:** [nayem220208@cseku.ac.bd](nayem220208@cseku.ac.bd)
 
-Course: Web Programming & Mobile Applications Development
+**Discipline:** Computer Science and Engineering
+**University:** Khulna University
+
+**Supervisor:** Prof. Dr. Kazi Mashudul Alam
+
+**Course:** Web Programming & Mobile Applications Development
 
 ---
 
