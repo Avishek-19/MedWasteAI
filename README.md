@@ -697,6 +697,26 @@ A formal open-source license may be added in a future release.
 
 ---
 
+👥 Team
+
+Avishek Paul
+Student ID: 220219
+Email: avishek220219@cseku.ac.bd
+
+Md Nayeem Hossain
+Student ID: 220208
+Email: nayemhossain17678@gmail.com
+
+Discipline: Computer Science and Engineering
+University: Khulna University
+
+Supervisor: Prof. Dr. Kazi Mashudul Alam
+
+Course: Web Programming & Mobile Applications Development
+
+---
+
+
 <div align="center">
 
 ## MEDWASTE AI
@@ -705,18 +725,3 @@ A formal open-source license may be added in a future release.
 
 </div>
 
-## Team
-Avishek Paul
-Student ID: 220219
-
-Md Nayeem Hossain
-Student ID: 220219
-
-Computer Science and Engineering Discipline
-Khulna University
-
-Supervisor:
-Prof. Dr. Kazi Mashudul Alam
-
-Course:
-Web Programming & Mobile Applications Development
