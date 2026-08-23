@@ -1,241 +1,110 @@
 # MEDWASTE AI
 
-> **Smarter Medical Waste Management. Safer Healthcare.**
+### Smarter Medical Waste Management. Safer Healthcare.
 
-MedWaste AI is a centralized, full-stack medical waste management platform designed to manage and track the complete lifecycle of healthcare waste—from generation and reporting to collection, transportation, treatment, recycling, final disposal, and digital verification.
+**MedWaste AI** is a modern full-stack medical waste management platform designed to digitally manage the complete lifecycle of medical waste.
 
-The platform connects healthcare organizations, waste collectors, treatment facilities, recycling companies, and administrators through a single ecosystem.
+The platform connects **Hospitals, Waste Collectors, Treatment Facilities, Recycling Companies, and Administrators** in a centralized ecosystem for safer, more traceable, and more efficient waste management.
 
 ---
 
 ## 🌍 Overview
 
-Medical waste management involves multiple organizations, processes, safety requirements, and handoffs. MedWaste AI aims to provide a centralized digital system that makes the entire process more structured, traceable, and transparent.
-
-### Core Workflow
+Medical waste passes through multiple organizations and stages before reaching its final destination. MedWaste AI provides a centralized platform to manage these processes digitally.
 
 ```text
-Hospital Generates Waste
-        ↓
-Waste Reported
-        ↓
-Classification
-        ↓
-Risk Assessment
-        ↓
-Segregation Decision
-        ↓
-Recycling / Treatment Decision
-        ↓
-Pickup Request
-        ↓
-Collector & Vehicle Assignment
-        ↓
-Transportation
-        ↓
+Hospital
+   ↓
+Waste Reporting
+   ↓
+Classification & Risk Assessment
+   ↓
+Pickup Scheduling
+   ↓
+Collection & Transportation
+   ↓
 Treatment Facility / Recycler
-        ↓
+   ↓
 Processing
-        ↓
-Final Disposal / Recycling
-        ↓
-Digital Proof & Verification
-        ↓
+   ↓
+Treatment / Recycling / Disposal
+   ↓
+Digital Proof
+   ↓
 Completed
 ```
 
-The system is designed to always answer an important question:
-
-> **Where is this waste right now?**
+The system is designed to maintain a complete digital history of each waste batch and provide visibility into its current status and location.
 
 ---
 
-# ✨ Key Features
+## ✨ Core Features
 
-## 🏥 Hospital Management
+### 🏥 Hospital Management
 
-Hospitals will be able to:
+* Hospital profile and organization management
+* Medical waste reporting
+* Waste history and tracking
+* Pickup requests
+* Priority-based pickup requests
+* Processing and destination tracking
+* Digital treatment/recycling/disposal records
+* Analytics and reports
 
-* Create and manage hospital profiles
-* Report medical waste
-* Upload waste images and documents
-* View waste history
-* Track waste status
-* Request pickups
-* Select Normal, Urgent, or Emergency priority
-* View assigned collectors and vehicles
-* Track transportation and processing
-* View treatment, disposal, or recycling proof
-* Access waste analytics
+### 🗑️ Waste Management
 
----
+* Waste batch creation
+* Unique waste identification
+* Waste categories
+* Quantity and unit tracking
+* Waste status management
+* Classification
+* Risk assessment
+* Recyclability assessment
+* Waste history
+* Search and filtering
 
-## 🗑️ Waste Classification
+### 🚛 Pickup & Transportation
 
-The platform supports configurable medical waste categories.
-
-Initial categories include:
-
-* General Waste
-* Infectious Waste
-* Sharps
-* Pharmaceutical Waste
-* Chemical Waste
-* Pathological Waste
-* Recyclable Medical Waste
-* Other Regulated Waste
-
-Classification will initially use deterministic and rule-based logic.
-
-Later versions will introduce local AI assistance.
-
----
-
-## ⚠️ Risk Assessment
-
-Each waste record can be evaluated for:
-
-* Risk level
-* Required handling
-* Segregation requirements
-* Recycling suitability
-* Treatment requirements
-
-Safety-critical decisions follow:
-
-```text
-AI Recommendation
-        +
-Rule Validation
-        +
-Human Verification
-```
-
-AI recommendations are not treated as unquestionable or legally authoritative decisions.
-
----
-
-## 🚛 Pickup & Vehicle Management
-
-The platform will support:
-
-* Normal pickup
-* Urgent pickup
-* Emergency pickup
+* Pickup scheduling
+* Normal, Urgent, and Emergency requests
 * Collector assignment
 * Vehicle assignment
-* Vehicle capacity tracking
-* Pickup scheduling
-* Transportation status
+* Vehicle capacity management
+* Pickup status
+* Transportation tracking
 * Delivery confirmation
 
-Emergency requests receive higher priority during scheduling.
+### 🏭 Treatment Facilities
 
----
-
-## 🏭 Treatment Facility Management
-
-Treatment facilities will be able to manage:
-
-* Facility profile
+* Facility profiles
 * Accepted waste types
 * Treatment capabilities
-* Processing capacity
-* Current utilization
-* Verification status
+* Capacity management
+* Facility verification
 * Waste reception
 * Processing records
 * Treatment proof
 
----
+### ♻️ Recycling Companies
 
-## ♻️ Recycling Network
+* Recycler profiles
+* Accepted recyclable materials
+* Capacity management
+* Verification
+* Recycling requests
+* Recycling confirmation
+* Recycling proof
 
-Potentially recyclable medical waste can be routed through a recycling workflow.
+### 🔗 Chain of Custody
 
-```text
-Waste Report
-      ↓
-Classification
-      ↓
-Recyclability Assessment
-      ↓
-Recycler Matching
-      ↓
-Pickup
-      ↓
-Recycling Company
-      ↓
-Recycling Process
-      ↓
-Digital Proof
-      ↓
-Completed
-```
-
-Recycler matching will consider:
-
-* Waste compatibility
-* Recycler capability
-* Available capacity
-* Verification status
-* Availability
-* Location information
-* Priority
-
----
-
-# 🧠 Smart Matching
-
-Before introducing AI, MedWaste AI uses deterministic matching algorithms.
-
-Possible destinations are evaluated using:
-
-1. Waste compatibility
-2. Verification status
-3. Available capacity
-4. Availability
-5. Location and distance information
-6. Priority
-
-Example:
-
-```text
-Waste Batch
-    ↓
-Find Candidates
-    ↓
-Compatibility Filter
-    ↓
-Capacity Filter
-    ↓
-Verification Filter
-    ↓
-Ranking Algorithm
-    ↓
-Recommended Destination
-```
-
-The system can display:
-
-* Recommended facility or recycler
-* Alternative options
-* Match score
-* Matching explanation
-
----
-
-# 🔗 Digital Chain of Custody
-
-Every important event in the waste lifecycle will be recorded.
+Every important waste event can be recorded throughout its lifecycle.
 
 Example:
 
 ```text
 MW-2026-000001
 
-Hospital
-   ↓
 Reported
    ↓
 Classified
@@ -259,77 +128,18 @@ Verified
 Completed
 ```
 
-Each event may contain:
+This creates a digital chain of custody for each waste batch.
 
-* Event type
-* Waste ID
-* Responsible user
-* Timestamp
-* Status
-* Notes
-* Quantity
-* Related organization
+### 🚨 Incident & Discrepancy Detection
 
----
+The system can identify operational issues such as:
 
-# 🆔 Waste Identification
-
-Every waste batch receives a unique identifier.
-
-Example:
-
-```text
-MW-2026-000001
-```
-
-A waste record will track information such as:
-
-* Waste ID
-* Source hospital
-* Waste category
-* Quantity and unit
-* Risk level
-* Creation time
-* Pickup information
-* Assigned collector
-* Vehicle
-* Destination
-* Processing status
-* Final result
-* Digital proof
-* Responsible users
-* Lifecycle timestamps
-
----
-
-# 📄 Proof of Disposal & Recycling
-
-Authorized organizations can submit digital proof for completed processing.
-
-Supported proof types include:
-
-* Treatment proof
-* Disposal proof
-* Recycling proof
-
-Records can contain:
-
-* Waste ID
-* Quantity
-* Processing type
-* Organization
-* Date
-* Authorized user
-* Notes
-* Document reference
-
-The platform will generate professional digital certificates and reports.
-
----
-
-# 🚨 Discrepancy & Incident Detection
-
-MedWaste AI can detect inconsistencies during waste handoffs.
+* Weight discrepancies
+* Missed pickups
+* Delayed transportation
+* Storage delays
+* Capacity exceeded
+* Unverified organizations
 
 Example:
 
@@ -337,133 +147,188 @@ Example:
 Hospital Reported:   100 kg
 Collector Received:  100 kg
 Facility Received:    82 kg
-
+                    --------
 Discrepancy:          18 kg
 ```
 
-This can generate an incident such as:
+---
+
+## 👥 User Roles
+
+MedWaste AI supports five primary user roles.
+
+| Role                      | Responsibilities                                                    |
+| ------------------------- | ------------------------------------------------------------------- |
+| 🏥 **Hospital**           | Report, manage, and track medical waste                             |
+| 🚛 **Waste Collector**    | Manage pickups and transportation                                   |
+| 🏭 **Treatment Facility** | Receive and process medical waste                                   |
+| ♻️ **Recycling Company**  | Receive and recycle eligible waste                                  |
+| 🛡️ **Administrator**     | Manage users, verification, rules, incidents, and system operations |
+
+Each role receives a dedicated dashboard and permissions based on its responsibilities.
+
+---
+
+## 🗂️ Waste Categories
+
+The initial system supports:
+
+* General Waste
+* Infectious Waste
+* Sharps
+* Pharmaceutical Waste
+* Chemical Waste
+* Pathological Waste
+* Recyclable Medical Waste
+* Other Regulated Waste
+
+The category system is designed to become configurable through the Admin Panel.
+
+---
+
+## 🧠 Smart Matching
+
+Before introducing AI-based recommendations, the platform uses deterministic matching algorithms.
+
+Potential treatment facilities and recycling companies can be ranked using:
+
+1. Waste compatibility
+2. Verification status
+3. Available capacity
+4. Availability
+5. Location information
+6. Priority
+
+Example:
 
 ```text
-WEIGHT_DISCREPANCY
+Waste Batch
+     ↓
+Candidate Organizations
+     ↓
+Compatibility Check
+     ↓
+Capacity Check
+     ↓
+Verification Check
+     ↓
+Ranking
+     ↓
+Recommended Destination
 ```
 
-Other possible incidents include:
-
-* Missed Pickup
-* Delayed Transport
-* Storage Delay
-* Capacity Exceeded
-* Unverified Facility
-* Unverified Recycler
+The system can provide a recommended destination together with alternative options and an explanation of the matching result.
 
 ---
 
-# 📊 Analytics
+## 🤖 Local AI Architecture
 
-The platform will eventually provide analytics for:
+AI functionality is intentionally introduced later in the development process.
 
-* Total waste
-* Recyclable waste
-* Recycled waste
-* Treated waste
-* Disposed waste
-* Recycling percentage
-* Waste generation trends
-* Waste category distribution
-* Hospital comparison
-* Processing statistics
-* Environmental indicators
-
-Environmental estimates will be clearly labeled and will not make scientifically unsupported claims.
-
----
-
-# 🤖 Local AI Strategy
-
-MedWaste AI is designed to support **local AI models** without depending on paid cloud AI APIs.
+The platform is designed to support **local AI models** rather than depending on paid cloud AI services.
 
 Potential architecture:
 
 ```text
 Frontend
-    ↓
+   ↓
 FastAPI Backend
-    ↓
+   ↓
 Local AI Engine
-    ↓
+   ↓
 Local Vision / LLM Model
-    ↓
+   ↓
 Rule Validation
-    ↓
+   ↓
 PostgreSQL
 ```
 
-Possible future local AI capabilities:
+Future AI capabilities may include:
 
 * Waste image analysis
 * Classification assistance
-* Risk estimation assistance
+* Risk assessment assistance
 * Recyclability analysis
 * Anomaly detection
 * Waste trend prediction
 * Facility recommendations
 * Recycler recommendations
 
-Possible local tooling may include [Ollama](https://ollama.com/?utm_source=chatgpt.com) and compatible locally hosted models.
+Local AI tooling may include [Ollama](https://ollama.com/?utm_source=chatgpt.com) and compatible local models.
 
-No external paid AI API is required.
+### AI Safety Principle
+
+AI is treated as an **assistant**, not as an unquestionable authority.
+
+```text
+AI Recommendation
+       ↓
+Rule Validation
+       ↓
+Human Verification
+       ↓
+Final Action
+```
+
+Safety-critical decisions should remain subject to appropriate human verification.
 
 ---
 
-# 👥 User Roles
+## 🛠️ Technology Stack
 
-MedWaste AI supports five primary roles.
+### Frontend
 
-| Role                  | Main Responsibilities                                    |
-| --------------------- | -------------------------------------------------------- |
-| 🏥 Hospital           | Report and track medical waste                           |
-| 🚛 Waste Collector    | Manage pickups and transportation                        |
-| 🏭 Treatment Facility | Receive and process medical waste                        |
-| ♻️ Recycling Company  | Process recyclable medical waste                         |
-| 🛡️ Admin             | Manage verification, rules, users, incidents, and audits |
+* **Next.js**
+* **TypeScript**
+* **Tailwind CSS**
+* **shadcn/ui**
+* **Lucide Icons**
+* **React Hook Form**
+* **Zod**
 
----
+### Backend
 
-# 🛠️ Technology Stack
+* **Python**
+* **FastAPI**
+* **SQLAlchemy**
+* **Pydantic**
+* **Alembic**
 
-## Frontend
+### Database
 
-* Next.js
-* TypeScript
-* Tailwind CSS
-* shadcn/ui
-* Lucide Icons
-* React Hook Form
-* Zod
+* **PostgreSQL**
+* Architecture prepared for future **pgvector** integration
 
-## Backend
+### Storage
 
-* Python
-* FastAPI
-* SQLAlchemy
-* Pydantic
-* Alembic
+* Local filesystem storage during development
 
-## Database
-
-* PostgreSQL
-* Future-compatible architecture for pgvector
-
-## Local Development
+### Development Environment
 
 * Node.js
 * Python
 * PostgreSQL
-* Local filesystem storage
+* Git
 
 ---
 
-# 📁 Project Structure
+## 🏗️ Architecture
+
+MedWaste AI follows a clean layered backend architecture.
+
+```text
+Frontend
+   ↓
+FastAPI API
+   ↓
+Service Layer
+   ↓
+Repository Layer
+   ↓
+PostgreSQL
+```
+
+The project follows a monorepo structure:
 
 ```text
 medwaste-ai/
@@ -474,8 +339,7 @@ medwaste-ai/
 │   ├── hooks/
 │   ├── lib/
 │   ├── types/
-│   ├── public/
-│   └── styles/
+│   └── public/
 │
 ├── backend/
 │   ├── app/
@@ -500,83 +364,82 @@ medwaste-ai/
 
 ---
 
-# 🏗️ Backend Architecture
+## 🎨 UI / UX
 
-The backend follows a layered architecture:
+MedWaste AI is designed as a **premium healthcare technology SaaS product**, rather than a basic CRUD application.
 
-```text
-API
- ↓
-Service
- ↓
-Repository
- ↓
-Database
-```
+### Design Direction
 
-Business logic should not be placed directly inside API route handlers.
+* Deep green and emerald
+* Clean white and neutral surfaces
+* Dark charcoal typography
+* Strong visual hierarchy
+* Professional dashboards
+* Data-rich tables
+* Responsive layouts
+* Subtle micro-interactions
+* Clear loading states
+* Meaningful empty states
+* User-friendly error handling
 
----
+The interface is designed for:
 
-# 🔄 Waste Lifecycle
-
-The controlled waste lifecycle is designed around state transitions.
-
-```text
-GENERATED
-    ↓
-REPORTED
-    ↓
-CLASSIFIED
-    ↓
-RISK_ASSESSED
-    ↓
-SEGREGATED
-    ↓
-PICKUP_REQUESTED
-    ↓
-PICKUP_ASSIGNED
-    ↓
-COLLECTED
-    ↓
-IN_TRANSIT
-    ↓
-DESTINATION_RECEIVED
-    ↓
-PROCESSING
-    ↓
-RECYCLED / TREATED / DISPOSED
-    ↓
-VERIFIED
-    ↓
-COMPLETED
-```
-
-Not every waste category necessarily follows every state.
-
-The application will use controlled state transitions to maintain lifecycle integrity.
+* Desktop
+* Laptop
+* Tablet
+* Mobile
 
 ---
 
-# 🚀 Development Roadmap
+## 📊 Dashboard
 
-The project is being developed phase by phase.
+The platform will provide role-specific dashboards.
 
-## Phase 1 — Project Setup + Premium Landing Page
+The primary navigation includes:
 
-* Next.js setup
-* TypeScript
-* Tailwind CSS
-* shadcn/ui
+```text
+Overview
+Waste
+Pickups
+Vehicles
+Facilities
+Recycling
+Tracking
+Analytics
+Reports
+Notifications
+Settings
+```
+
+Dashboard information may include:
+
+* Total Waste
+* Pending Pickup
+* In Transit
+* Processing
+* Recycled
+* High Risk
+* Recent Activities
+* Waste Trends
+* Processing Statistics
+
+---
+
+## 🗺️ Development Roadmap
+
+MedWaste AI is being developed through **15 controlled phases**.
+
+### Phase 1 — Project Setup + Premium Landing Page
+
+* Next.js foundation
+* FastAPI foundation
+* PostgreSQL connection
 * Design system
 * Premium landing page
-* FastAPI setup
-* PostgreSQL connection
-* Health endpoint
-* CORS
+* Health API
 * Environment configuration
 
-## Phase 2 — Authentication + User Roles
+### Phase 2 — Authentication + User Roles
 
 * Registration
 * Login
@@ -585,39 +448,39 @@ The project is being developed phase by phase.
 * JWT/session strategy
 * Role-based access control
 
-## Phase 3 — Hospital Dashboard + Hospital Profile
+### Phase 3 — Hospital Dashboard + Profile
 
 * Hospital dashboard
 * Hospital profile
-* Dashboard statistics
-* Settings and profile management
+* Statistics
+* Profile settings
 
-## Phase 4 — Waste Reporting & Management
+### Phase 4 — Waste Reporting & Management
 
 * Waste reporting
-* Quantity and category
+* Waste records
 * File uploads
 * Waste history
-* Search and filters
+* Search and filtering
 * Pagination
 
-## Phase 5 — Waste Classification
+### Phase 5 — Waste Classification
 
 * Classification interface
 * Rule-based classification
-* Confidence representation
+* Classification history
 * Manual correction
-* Verification workflow
+* Verification
 
-## Phase 6 — Risk Assessment + Recycling Decision
+### Phase 6 — Risk Assessment + Recycling Decision
 
 * Risk levels
-* Configurable rules
-* Recyclability decisions
+* Rule engine
+* Recyclability assessment
 * Handling recommendations
 * Human verification
 
-## Phase 7 — Pickup Scheduling + Vehicle Management
+### Phase 7 — Pickup Scheduling + Vehicle Management
 
 * Pickup requests
 * Priority scheduling
@@ -625,60 +488,58 @@ The project is being developed phase by phase.
 * Vehicle management
 * Capacity tracking
 
-## Phase 8 — Treatment Facilities + Recycling Companies
+### Phase 8 — Treatment Facilities + Recycling Companies
 
-* Facility profiles
-* Recycler profiles
+* Facility management
+* Recycler management
 * Capabilities
 * Capacity
 * Verification
-* Organization dashboards
+* Dedicated dashboards
 
-## Phase 9 — Smart Facility/Recycler Matching
+### Phase 9 — Smart Facility / Recycler Matching
 
 * Deterministic matching
 * Match scoring
 * Recommendations
 * Alternative destinations
-* Match explanations
 
-## Phase 10 — Digital Chain of Custody
+### Phase 10 — Digital Chain of Custody
 
 * Unique waste IDs
-* Timeline
+* Lifecycle timeline
 * Event history
 * Quantity tracking
 * Audit history
 
-## Phase 11 — Transport Tracking + Notifications
+### Phase 11 — Transport Tracking + Notifications
 
 * Collector dashboard
-* Transport status
+* Transportation status
 * Delivery confirmation
 * Internal notifications
-* Incident notifications
-* Weight discrepancy detection
+* Incident detection
 
-## Phase 12 — Local AI Intelligence
+### Phase 12 — Local AI Intelligence
 
-* Local waste image analysis
+* Local AI integration
+* Image analysis
 * Classification assistance
 * Risk assessment assistance
 * Recyclability analysis
 * Anomaly detection
 * Trend prediction
-* AI-assisted recommendations
 
-## Phase 13 — Analytics + Environmental Dashboard
+### Phase 13 — Analytics + Environmental Dashboard
 
 * Waste analytics
-* Category analytics
 * Recycling analytics
-* Processing analytics
+* Treatment analytics
+* Processing statistics
 * Reports
 * Environmental indicators
 
-## Phase 14 — Admin Panel + Verification + Audit
+### Phase 14 — Admin Panel + Verification + Audit
 
 * Admin dashboard
 * User management
@@ -687,10 +548,8 @@ The project is being developed phase by phase.
 * Incident management
 * Audit logs
 
-## Phase 15 — Testing + Security + Final Polish
+### Phase 15 — Testing + Security + Final Polish
 
-* Frontend validation
-* Backend validation
 * Unit tests
 * API tests
 * Database tests
@@ -698,65 +557,45 @@ The project is being developed phase by phase.
 * Security review
 * Accessibility
 * Responsive testing
+* Performance improvements
 * Final UI polish
 * Documentation
 
 ---
 
-# 🎨 Design Philosophy
+## 🚫 No Paid External APIs
 
-MedWaste AI is designed as a modern healthcare and sustainability SaaS platform.
+The initial platform does **not** depend on paid third-party APIs.
 
-Visual principles include:
+The project intentionally avoids:
 
-* Deep green and emerald accents
-* Neutral white and soft gray surfaces
-* Dark charcoal typography
-* Strong visual hierarchy
-* Professional spacing
-* Data-rich interfaces
-* Clean tables and dashboards
-* Responsive design
-* Subtle micro-interactions
-* Skeleton loading states
-* Clear empty states
-* User-friendly error handling
+* OpenAI API
+* Gemini API
+* Claude API
+* Google Maps API
+* Mapbox
+* Twilio
+* SendGrid
+* Stripe
+* Paid cloud AI services
 
-The goal is to create a **startup-quality product experience**, not a basic CRUD application.
+The core system is designed around:
 
----
-
-# 🔐 Security Principles
-
-As the project evolves, MedWaste AI will implement:
-
-* Secure password hashing
-* Authentication
-* Role-based authorization
-* Input validation
-* Backend validation
-* File validation
-* Secure database queries
-* Protected endpoints
-* Audit logging
-* Environment-based secrets
-
-Sensitive credentials must never be committed to the repository.
-
----
-
-# ⚙️ Getting Started
-
-## Prerequisites
-
-Install:
-
-* Node.js
-* Python
+* Local algorithms
 * PostgreSQL
-* Git
+* Local file storage
+* Local AI models
+* Deterministic matching
+* Rule engines
+* Seed/demo data
 
-Check installations:
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure the following are installed:
 
 ```bash
 node --version
@@ -766,164 +605,118 @@ psql --version
 git --version
 ```
 
----
-
-## Clone the Repository
+### Clone Repository
 
 ```bash
 git clone <YOUR_REPOSITORY_URL>
 cd medwaste-ai
 ```
 
----
+### Environment Setup
 
-## Environment Configuration
+Create the environment file:
 
-Create your local environment configuration from the provided example:
+**Windows:**
 
 ```bash
 copy .env.example .env
 ```
 
-On macOS/Linux:
+**Linux / macOS:**
 
 ```bash
 cp .env.example .env
 ```
 
-Update database and application settings according to your local environment.
+Configure the required PostgreSQL and application environment variables inside `.env`.
 
 ---
 
-# 🧪 Testing
+## 🧪 Development Philosophy
 
-Each development phase follows this process:
+The project is developed **one phase at a time**.
+
+For each phase:
 
 ```text
-Implement
-    ↓
-Run relevant frontend checks
-    ↓
-Run backend checks
-    ↓
-Run tests
-    ↓
-Fix errors
-    ↓
-Verify previous functionality
-    ↓
-Complete phase
+Inspect Existing Code
+        ↓
+Implement Current Phase
+        ↓
+Test
+        ↓
+Fix Errors
+        ↓
+Verify Previous Features
+        ↓
+Complete Phase
 ```
 
-No phase should be considered complete without relevant testing.
+Future phases are not implemented prematurely.
+
+This keeps the project stable, maintainable, and easier to test.
 
 ---
 
-# 🚫 Out of Scope
+## 🔐 Security
 
-The current project intentionally does not use:
+Security is treated as a core requirement.
 
-* Paid AI APIs
-* OpenAI API
-* Gemini API
-* Claude API
-* Google Maps API
-* Mapbox API
-* Twilio
-* SendGrid
-* Stripe
-* Kubernetes
-* Docker
-* Docker Compose
-* Terraform
-* Ansible
-* Microservices
-* Service mesh
-* CI/CD infrastructure
-* AWS infrastructure
+The project will implement:
 
-These technologies may be considered in the future only if explicitly required.
+* Secure password hashing
+* Authentication
+* Role-based authorization
+* Input validation
+* Backend validation
+* File validation
+* Protected API endpoints
+* Secure database queries
+* Audit logging
+* Environment-based secrets
+
+Sensitive credentials should never be committed to Git.
 
 ---
 
-# ⚠️ Important Disclaimer
+## 📌 Project Status
 
-MedWaste AI is a software platform and prototype.
+🚧 **Active Development**
 
-AI-generated outputs, including:
+**Current Phase:** Phase 1 — Project Setup + Premium Landing Page
 
-* Suggested classifications
-* Risk estimates
-* Recyclability assessments
-* Recommended actions
-* Matching recommendations
-
-must not be treated as automatically authoritative for safety-critical decisions.
-
-The intended decision flow is:
-
-```text
-AI Recommendation
-        +
-Business / Safety Rules
-        +
-Human Verification
-```
-
-The platform should clearly indicate when an output:
-
-* Is AI-generated
-* Is a recommendation
-* Requires verification
-* Requires human approval
+The project is being developed incrementally according to the 15-phase roadmap.
 
 ---
 
-# 📌 Project Status
+## 📄 License
 
-🚧 **Under Active Development**
+This project is currently developed as a software prototype for educational, research, and product-development purposes.
 
-The application is being implemented incrementally using a controlled **15-phase development process**.
-
-Current focus:
-
-```text
-Phase 1
-Project Setup + Premium Landing Page
-```
-
----
-
-# 🤝 Contributing
-
-This project follows a phase-based development workflow.
-
-When contributing:
-
-1. Inspect existing functionality.
-2. Avoid unnecessary rewrites.
-3. Keep changes focused.
-4. Do not implement future phases early.
-5. Test relevant functionality.
-6. Preserve existing working features.
-7. Keep architecture consistent.
-
----
-
-# 📄 License
-
-This project is currently intended for educational, research, and prototype development purposes.
-
-A formal license may be added later.
+A formal open-source license may be added in a future release.
 
 ---
 
 <div align="center">
 
-# MEDWASTE AI
+## MEDWASTE AI
 
-### Smarter Medical Waste Management. Safer Healthcare.
-
-Building a more traceable, organized, and intelligent medical waste management ecosystem.
+**Smarter Medical Waste Management. Safer Healthcare.**
 
 </div>
+
+## Team
+Avishek Paul
+Student ID: 220219
+
+Md Nayeem Hossain
+Student ID: 220219
+
+Computer Science and Engineering Discipline
+Khulna University
+
+Supervisor:
+Prof. Dr. Kazi Mashudul Alam
+
+Course:
+Web Programming & Mobile Applications Development
